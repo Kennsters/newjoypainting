@@ -2,6 +2,10 @@ li {
     display: inline-block;
 }
 
+body {
+    background-color: aliceblue;
+}
+
 li a {
     text-decoration: none !important;
     color: black;
@@ -51,7 +55,7 @@ a:hover::before {
 
 #navBar {
     margin-top: 25px;
-    background-color: white !important;
+    background-color: aliceblue !important;
 }
 
 img {
@@ -70,6 +74,13 @@ img {
     margin-bottom: 30px;
 }
 
+#paint {
+    width: 100%;
+}
+
+#newJoy {
+    width: auto;
+}
 .footer {
     position: fixed;
     left: 0;
@@ -78,4 +89,8 @@ img {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+.carousel {
+    margin-bottom: 50px;
 }
