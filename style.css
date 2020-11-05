@@ -6,6 +6,10 @@ body {
     background-color: aliceblue;
 }
 
+hr {
+    height: 2px !important;
+}
+
 li a {
     text-decoration: none !important;
     color: black;
@@ -19,6 +23,7 @@ ul {
 
 span {
     padding-top: 10px;
+    font-size: 25px;
 }
 
 li {
@@ -31,11 +36,37 @@ p {
     font-weight: bold;
 }
 
-a:hover {
+img {
+    width: 80%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.carousel {
+    margin-bottom: 50px;
+}
+
+.contact {
+    font-size: 20px;
+}
+
+#link1:hover,
+#link2:hover,
+#link3:hover {
     color: black;
 }
 
-a::before {
+#link1::before,
+#link2::before,
+#link3::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -48,18 +79,23 @@ a::before {
     transition: all 0.2s ease-in-out 0s;
 }
 
-a:hover::before {
+#link1:hover::before,
+#link2:hover::before,
+#link3:hover::before {
     visibility: visible;
     transform: scaleX(1);
 }
 
-#navBar {
-    margin-top: 25px;
-    background-color: aliceblue !important;
+#link1,
+#link2,
+#link3 {
+    font-size: 22px;
 }
 
-img {
-    width: 80%;
+#navBar {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: aliceblue !important;
 }
 
 #aboutUs {
@@ -80,17 +116,20 @@ img {
 
 #newJoy {
     width: auto;
-}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 75px;
+    color: orange;
+    text-shadow: 1px 1px blue;
 }
 
-.carousel {
-    margin-bottom: 50px;
+#hello {
+    background-color: black;
+}
+
+#serviceTitle,
+#contactTitle, 
+#aboutUsTitle, 
+#exWorks {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
 }

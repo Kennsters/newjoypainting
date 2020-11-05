@@ -9,12 +9,14 @@
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <!-- link the media query you want to use here -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
+        <!-- <h4 id="hello" class="text-center">hello?</h4> -->
 
         <nav id="navBar" class="mb-5 navbar navbar-expand-lg navbar-light bg-light">
             <div class="navbar-brand">
@@ -29,9 +31,9 @@
                 <ul class="navbar-nav mr-auto"></ul>
                 <span>
                     <ul>
-                        <li><a class="cool-link" href="#">About Us</a></li><span> / </span>
-                        <li><a class="cool-link" href="#">Services</a></li><span> / </span>
-                        <li><a class="cool-link" href="#">Contact Us</a></li>
+                        <li><a id="link1" class="cool-link" href="#">About Us</a></li><span> / </span>
+                        <li><a id="link2" class="cool-link" href="#">Services</a></li><span> / </span>
+                        <li><a id="link3" class="cool-link" href="#">Contact Us</a></li>
                     </ul>
                 </span>
             </div>
@@ -39,27 +41,32 @@
 
         <!-- an about us section -->
         <div id="aboutUs" class="row">
-            <div class="col-4">
-                <img src="https://de-production-media.s3.amazonaws.com/static/landings/colors/colors.jpg">
+            <div class="col-4 d-flex justify-content-center">
+                <img class="d-flex justify-content-center" src="https://de-production-media.s3.amazonaws.com/static/landings/colors/colors.jpg">
             </div>
             <div class="col-8">
-                <h3>About Us</h3>
+                <h3 id="aboutUsTitle">About Us</h3>
                 <hr>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ut beatae aliquid dolores, modi
                     maiores, ea cumque expedita, dolorum perspiciatis minima eius. Dicta quasi, delectus esse reiciendis
-                    eum voluptates pariatur?
+                    eum voluptates pariatur? 
                 </p>
             </div>
         </div>
 
         <!-- These are the services -->
         <div id="services" class="row">
-            <h3 class="col-12 text-center">Services</h3>
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-12 text-center">
+                        <h3 id="serviceTitle">Services</h3>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
                             <img src="https://rdcnewsadvice.wpengine.com/wp-content/uploads/2015/08/house-painter.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">One Service</h5>
@@ -67,8 +74,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
                             <img src="https://rdcnewsadvice.wpengine.com/wp-content/uploads/2015/08/house-painter.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Two Service</h5>
@@ -76,8 +83,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
                             <img src="https://rdcnewsadvice.wpengine.com/wp-content/uploads/2015/08/house-painter.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Last Service</h5>
@@ -89,15 +96,11 @@
             </div>
         </div>
 
-        <!-- Contact section -->
-        <div id="contactUs" class="row">
-            <h3 class="text-center col-12">Contact Us</h3>
-        </div>
-
         <!-- this is for a carasel for later -->
-        <h3 class="text-center col-12">Some of Our Works!</h3>
+        <h3 id="exWorks" class="text-center col-12">Some of Our Works!</h3>
+        <hr>
         <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide col-4" data-ride="carousel" data-interval="2500">
+            <div id="carouselExampleIndicators" class="carousel slide col-6" data-ride="carousel" data-interval="2500">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -128,7 +131,7 @@
                 </div>
             </div>
 
-            <div id="carouselExampleIndicators2" class="carousel slide col-4" data-ride="carousel">
+            <div id="carouselExampleIndicators2" class="carousel slide col-6" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -155,7 +158,7 @@
                 </div>
             </div>
 
-            <div id="carouselExampleIndicators1" class="carousel slide col-4" data-ride="carousel">
+            <!-- <div id="carouselExampleIndicators1" class="carousel slide col-4" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -180,18 +183,40 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </div>
+            </div> -->
+        </div>
+
+        <!-- Contact section -->
+        <div id="contactUs" class="row">
+            <div class="col-12">
+                <h3 id="contactTitle" class="text-center col-12">Contact Us</h3>
+                <hr>
+                <h5 class="text-center">
+                    Contact us today to get your free estimate!
+                </h5>
+                <div class="row text-center">
+                    <div class="col-6 contact">
+                        Phone: 
+                    </div>
+                    <div class="col-6 contact">
+                        Email: 
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- footer stuff -->
         <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
             <div class="container text-center">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed cumque dolorem ullam pariatur facere,
-                    cupiditate quibusdam reiciendis illum. Repudiandae consequatur ducimus quae quasi hic quidem nihil
-                    sunt temporibus at. Architecto?
-                </p>
-                <!-- <small>Copyright &copy; Your Website</small> -->
+                <div class="row text-center">
+                    <!-- <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed cumque dolorem ullam pariatur facere,
+                        cupiditate quibusdam reiciendis illum. Repudiandae consequatur ducimus quae quasi hic quidem nihil
+                        sunt temporibus at. Architecto?
+                    </p> -->
+                </div>
+                <small>New Joy Painting</small>
+                <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=738672" target="_blank"><small>License #: 738672</small></a>
             </div>
         </footer>
 
